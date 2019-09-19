@@ -12,13 +12,3 @@ describe('server.js', () => {
         });
     });
 });
-describe('users-router.js', () => {
-    describe('GET /api/users', () => {
-        it('returns status 200 OK', () => {
-            return request(server).get('/api/users')
-            .then(res => {
-                expect(res.status).toBe(200)
-            })
-        });
-    });
-});
