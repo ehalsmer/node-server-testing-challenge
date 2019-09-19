@@ -3,7 +3,7 @@ const request = require('supertest');
 const server = require('./server');
 
 describe('server.js', () => {
-    describe('Get /', () => {
+    describe('GET /', () => {
         it('returns status 200 OK', () => {
             return request(server).get('/')// returns a promise
             .then(res => {
